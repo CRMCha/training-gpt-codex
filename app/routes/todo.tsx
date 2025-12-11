@@ -6,10 +6,8 @@ export default function Todo() {
   const [input, setInput] = useState("");
 
   const addTodo = () => {
-    if (input.trim()) {
-      setTodos([...todos, input]);
-      setInput("");
-    }
+    setTodos([...todos, input]);
+    setInput("");
   };
 
   const deleteTodo = (index: number) => {
